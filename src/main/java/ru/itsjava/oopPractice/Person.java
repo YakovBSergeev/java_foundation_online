@@ -5,18 +5,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
+
 @Data
 @AllArgsConstructor
-
-
 public class Person {
 
-    private int age;
     private String name;
 
-    public Person(int age) {
-    }
+    private int age;
 
+
+//    public Person(int age) {
+//    }
+//
 //    public Person(int age) {
 //        this.age = age;
 //    }
@@ -26,6 +27,20 @@ public class Person {
 //        this.name = name;
 //    }
 
+    public void birthday() {
+        age = age + 1;
+//        System.out.println( age );
+    }
+
+    public boolean takeBeer(int age) {
+        if (age > 18) {
+            System.out.println( "true = " + true );
+            return true;
+        } else {
+            System.out.println( "false = " + false );
+            return false;
+        }
+    }
 
     public int printAge() {
         return age;
@@ -33,7 +48,7 @@ public class Person {
 
     public void printAll() {
 
-        System.out.println(name + " " + age);
+        System.out.println( name + " " + age );
 
     }
 //    @Override
