@@ -1,15 +1,14 @@
 package ru.itsjava.oopPracticeFig;
 
-public class Circle extends Fig{
-    public static final double PI = 3.1415;
-    public double sideD;
+public class Circle extends Fig {
 
-    public Circle(double sideD) {
-        this.sideD = sideD;
+    public Circle(double rad) {
+        this.rad = rad;
     }
 
-    public double getAreaCircle() {
-        double areaCircle = PI * sideD * sideD;
-        return areaCircle;
+
+    @Override
+    public double area() {
+        return PI * rad * rad;
     }
 }

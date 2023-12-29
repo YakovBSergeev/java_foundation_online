@@ -8,15 +8,8 @@ import lombok.Data;
 
 public class Car {
 
-    public String brandCar;
+    private String brandCar;
     public String colorCar;
-    public static double priceCar;
-
-
-    public Car(String brandCar, String colorCar, double priceCar) {
-        this.brandCar = brandCar;
-        this.colorCar = colorCar;
-        this.priceCar = priceCar; //@AllArgsConstructor не работает с полями static
-    }
+    public static double priceCar = 1000.65485;
 
 }

@@ -2,12 +2,12 @@ package ru.itsjava.car;
 
 public class Bently extends Car {
     public Bently(String brandCar, String colorCar, double priceCar) {
-        super( brandCar, colorCar, priceCar );
+        super( brandCar, colorCar );
 
     }
 
     public void carInfoB() {
-        System.out.println( brandCar +" цвет "+ colorCar +" цена "+ priceCar );
+        System.out.println( getBrandCar() + " цвет " + colorCar + " цена " + priceCar );
     }
 
 }
