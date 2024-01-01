@@ -27,7 +27,8 @@ public class ObjectPractice {
         System.out.println(dog1);
         System.out.println(dog2);
         System.out.println(dog2.getNickname());
-
+        System.out.println(dog2.getPawsCount());
+        System.out.println("dog1_1 = " + dog1_1);
 
 
     }

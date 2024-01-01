@@ -12,4 +12,9 @@ public class Car {
     public String colorCar;
     public static double priceCar = 1000.65485;
 
+    public void carInfo(){
+        System.out.println("brandCar+colorCar+priceCar = " + brandCar + colorCar + priceCar);
+
+    }
+
 }

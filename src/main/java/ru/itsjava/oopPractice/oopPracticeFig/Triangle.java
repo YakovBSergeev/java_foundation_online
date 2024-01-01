@@ -1,4 +1,4 @@
-package ru.itsjava.oopPracticeFig;
+package ru.itsjava.oopPractice.oopPracticeFig;
 
 public class Triangle extends Fig {
 

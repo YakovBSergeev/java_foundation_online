@@ -1,4 +1,4 @@
-package ru.itsjava.oopPracticeFig;
+package ru.itsjava.oopPractice.oopPracticeFig;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +12,7 @@ public class Main {
         System.out.println( "Площадь прямоугольника " + rectangle.area() );
         System.out.println( "Периметр квадрата " + square.perimeter() );
         System.out.println( "circle.area() = " + circle.area() );
+        System.out.println("circle.perimeter() = " + circle.perimeter());
 
     }
 }

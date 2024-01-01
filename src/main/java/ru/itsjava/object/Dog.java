@@ -5,6 +5,7 @@ import lombok.*;
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor
+
 public class Dog {
 
     private final String nickname;

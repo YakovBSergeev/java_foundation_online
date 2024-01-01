@@ -8,4 +8,9 @@ public class Lada extends Car {
     public void carInfoL() {
         System.out.println( getBrandCar() +" цвет "+ colorCar +" цена "+ priceCar );
     }
+    @Override
+    public void carInfo(){
+        System.out.println("priceCar+colorCar+brandCar = " + priceCar + colorCar + getBrandCar());
+
+    }
 }

@@ -1,4 +1,4 @@
-package ru.itsjava.oopPracticeFig;
+package ru.itsjava.oopPractice.oopPracticeFig;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,11 @@
 package ru.itsjava.statics;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 @AllArgsConstructor
+@Data
+
 public class Salary {
     private final double baseSalary;
     private static double increaseCoefficient = 2.5;

@@ -17,6 +17,11 @@ public class StaticPractice {
         System.out.println( "targetSalary.getFullSalary() = " + targetSalary.getFullSalary() );
 
         System.out.println( "Salary.CEO = " + Salary.CEO );
+        System.out.println("targetSalary = " + targetSalary);
+
+
+
+
 
 
     }
