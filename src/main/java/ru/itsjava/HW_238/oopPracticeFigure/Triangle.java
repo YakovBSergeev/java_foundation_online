@@ -2,6 +2,8 @@ package ru.itsjava.HW_238.oopPracticeFigure;
 
 public class Triangle extends Figure {
 
+    private double sideA, sideB, sideC;
+
     public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
         this.sideB = sideB;

@@ -2,6 +2,8 @@ package ru.itsjava.HW_238.oopPracticeFigure;
 
 public class Circle extends Figure {
 
+    private double rad;
+
     public Circle(double rad) {
 //        super(rad);
         this.rad = rad;

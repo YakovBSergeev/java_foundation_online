@@ -2,6 +2,8 @@ package ru.itsjava.HW_238.oopPracticeFigure;
 
 public class Rectangle extends Figure {
 
+    private double sideA, sideB;
+
     public Rectangle(double sideA, double sideB) {
         this.sideA = sideA;
         this.sideB = sideB;

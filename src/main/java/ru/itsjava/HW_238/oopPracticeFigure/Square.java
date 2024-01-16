@@ -2,6 +2,8 @@ package ru.itsjava.HW_238.oopPracticeFigure;
 
 public class Square extends Figure {
 
+    private double sideA;
+
     public Square(double sideA) {
         this.sideA = sideA;
     }
