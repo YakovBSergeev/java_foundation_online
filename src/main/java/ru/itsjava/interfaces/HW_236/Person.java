@@ -12,14 +12,12 @@ public class Person implements Comparable<Person>, Cloneable {
 
     @Override
     public int compareTo(Person person) {
-        if (surname.compareTo( person.surname ) != 0 & name.compareTo( person.name ) != 0) {
+        if (surname.compareTo( person.surname ) != 0) {
             return surname.compareTo( person.surname );
-        } else if (surname.compareTo( person.surname ) == 0 & name.compareTo( person.name ) != 0) {
+        } else if (name.compareTo( person.name ) != 0) {
             return name.compareTo( person.name );
-        } else if (surname.compareTo( person.surname ) != 0 & name.compareTo( person.name ) == 0) {
-            return surname.compareTo( person.surname );
         } else {
-             return (int) (age - person.age);
+            return (int) (age - person.age);
         }
     }
 
