@@ -5,7 +5,6 @@ public class Circle extends Figure {
     private double rad;
 
     public Circle(double rad) {
-//        super(rad);
         this.rad = rad;
     }
 
@@ -15,8 +14,8 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double perimeter(){
+    public double perimeter() {
 
-        return 2*PI*rad;
+        return 2 * PI * rad;
     }
 }
