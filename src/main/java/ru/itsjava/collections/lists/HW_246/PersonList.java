@@ -8,14 +8,14 @@ public class PersonList {
     public static void main(String[] args) {
         Person vanya = new Person( "Vanya", 22, "man" );
         Person roma = new Person( "Roma", 42, "man" );
-        Person sonya = new Person( "Sonya", 62, "man" );
+        Person sonya = new Person( "Sonya", 62, "female" );
         Person noi = new Person( "Noi", 9, "man" );
         Person bairan = new Person( "Bairan", 15, "man" );
         Person fedor = new Person( "Fedor", 30, "man" );
-        Person semen = new Person( "Semen", 18, "man" );
+        Person sofia = new Person( "Sofia", 18, "female" );
         Person nikolas = new Person( "Nikolas", 24, "man" );
 
-        List<Person> listN = new ArrayList<>( Arrays.asList( vanya, roma, sonya, noi, bairan, fedor, semen, nikolas ) );
+        List<Person> listN = new ArrayList<>( Arrays.asList( vanya, roma, sonya, noi, bairan, fedor, sofia, nikolas ) );
 //        System.out.println( listN.get( 1 ).getName().charAt( 0 ) );
 //        System.out.println( listN.get( 1 ).getName().substring( 0,1 ) );
 
@@ -26,6 +26,18 @@ public class PersonList {
 
             }
         }
+        System.out.println();
+        System.out.println( "Найти средний возраст всех женщин." );
+        double ageMix = 0;
+        int countFemale = 0;
+        for (int i = 0; i < listN.size(); i++) {
+            if (listN.get( i ).getIsMale().equals( "female" )) {
+                countFemale++;
+                ageMix = (ageMix*(countFemale-1) + listN.get( i ).getAge())/countFemale;
 
+            }
+
+        }
+        System.out.println( ageMix );
     }
 }
