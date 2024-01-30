@@ -1,8 +1,6 @@
 package ru.itsjava.exceptions.HW_244;
 
-import lombok.ToString;
-
-public class main {
+public class Main {
 
 
     public static void main(String[] args) {
@@ -12,8 +10,6 @@ public class main {
         } catch (AgeNotValidException ae) {
             System.out.println( "Ошибка возраста!!!" );
             ae.printStackTrace();
-        } finally {
-
         }
 
     }

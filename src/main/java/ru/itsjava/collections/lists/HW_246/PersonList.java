@@ -17,11 +17,11 @@ public class PersonList {
 
         List<Person> listN = new ArrayList<>( Arrays.asList( vanya, roma, sonya, noi, bairan, fedor, sofia, nikolas ) );
 //        System.out.println( listN.get( 1 ).getName().charAt( 0 ) );
-//        System.out.println( listN.get( 1 ).getName().substring( 0,1 ) );
+//        listN.get( i ).getName().substring( 0, 1 ).equals( "N" ));
 
         System.out.println( "Вернуть всех военнообязанных мужчин, которым меньше 30, больше 18 и имя начинается на N." );
         for (int i = 0; i < listN.size(); i++) {
-            if (listN.get( i ).getName().substring( 0, 1 ).equals( "N" ) && listN.get( i ).getAge() > 18 && listN.get( i ).getAge() < 30 && listN.get( i ).getIsMale().equals( "man" )) {
+            if (listN.get( i ).getName().charAt( 0 ) == 'N' && listN.get( i ).getAge() > 18 && listN.get( i ).getAge() < 30 && listN.get( i ).getIsMale().equals( "man" )) {
                 System.out.println( listN.get( i ).getName() + " " + listN.get( i ).getAge() + " " + listN.get( i ).getIsMale() );
 
             }
