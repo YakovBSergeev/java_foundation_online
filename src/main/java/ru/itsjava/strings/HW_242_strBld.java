@@ -10,6 +10,7 @@ public class HW_242_strBld {
         StringBuilder strBld3 = new StringBuilder().appendCodePoint( 128640 );//добавляет строковое представление аргумента.
 
         System.out.println( "strBld.capacity = " + strBld.capacity() ); //возвращает емкость объекта.
+        System.out.println( "strBld2.capacity = " + strBld2.capacity() ); //возвращает емкость объекта.
         System.out.println( "strBld1.length() = " + strBld1.length() );//возвращает длину объекта.
         System.out.println( "strBld2.append( strBld1 ) = " + strBld2.append( strBld1 ) );//добавляет строковое представление объекта к строке.
         System.out.println( "strBld2.capacity() = " + strBld2.capacity() );//возвращает емкость объекта.

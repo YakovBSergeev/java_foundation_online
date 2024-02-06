@@ -29,7 +29,7 @@ public class Person {
 
     public void birthday() {
         age = age + 1;
-//        System.out.println( age );
+        System.out.println( age );
     }
 
     public boolean takeBeer(int age) {

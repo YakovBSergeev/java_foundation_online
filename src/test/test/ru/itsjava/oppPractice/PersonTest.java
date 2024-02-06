@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import ru.itsjava.oopPractice.Person;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @SuppressWarnings("ALL")
 @DisplayName("Класс Person должен:")
@@ -23,6 +24,7 @@ public class PersonTest {
 
         assertEquals( DEFAULT_NAME, personPos.getName() );
         assertEquals( DEFAULT_AGE, personPos.getAge() );
+        assertFalse( personPos.equals( DEFAULT_NAME ) );
     }
 
     @Test

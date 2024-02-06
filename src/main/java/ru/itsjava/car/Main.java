@@ -6,12 +6,14 @@ public class Main {
         Car lada = new Lada( "жигули", "желтый", 100 );
         Car bently = new Bently( "бентли", "черный", 100000 );
         Car volga = new Car("Волга", "Белый");
+//        Car.priceCar = 38;
 
 
         ((Bently) bently).carInfoB();
         ((Lada) lada).carInfoL();
         volga.carInfo();
         lada.carInfo();
+        bently.carInfo();
 
 
     }

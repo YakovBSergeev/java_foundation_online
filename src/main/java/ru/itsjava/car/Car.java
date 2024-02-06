@@ -9,7 +9,7 @@ import lombok.Data;
 public class Car {
 
     private String brandCar;
-    public String colorCar;
+    private String colorCar;
     public static double priceCar = 1000.65485;
 
     public void carInfo(){

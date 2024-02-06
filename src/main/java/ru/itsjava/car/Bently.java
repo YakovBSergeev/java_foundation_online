@@ -7,7 +7,13 @@ public class Bently extends Car {
     }
 
     public void carInfoB() {
-        System.out.println( getBrandCar() + " цвет " + colorCar + " цена " + priceCar );
+        System.out.println( getBrandCar() + " цвет " + getColorCar() + " цена " + priceCar );
+    }
+
+    @Override
+    public void carInfo(){
+        System.out.println("priceCar+colorCar+brandCar = " + priceCar + getColorCar() + getBrandCar());
+
     }
 
 }
