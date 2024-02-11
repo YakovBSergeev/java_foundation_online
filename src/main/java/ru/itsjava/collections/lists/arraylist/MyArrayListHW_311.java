@@ -64,7 +64,20 @@ public class MyArrayListHW_311 {
     }
 
     public boolean remove(Object o) {
-        return false;
+        int delIndex = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != null && array[i].equals(o)) {
+                delIndex = i;
+            }
+            break;
+        }
+        if (delIndex == -1) {
+            return false;
+        } else {
+            System.arraycopy(array, delIndex + 1, array, delIndex, array.length - 1 - delIndex);
+            realSize--;
+            return true;
+        }
     }
 
     public void clear() {
@@ -73,19 +86,61 @@ public class MyArrayListHW_311 {
     }
 
     public Object get(int index) {
-        return null;
+        checkIndex(index);
+        if (isCorrectIndex(index)) {
+            return array[index];
+        }
+        return array[index];
     }
 
     public Object set(int index, Object element) {
-        return null;
+        checkIndex(index);
+        if (isCorrectIndex(index)) {
+            array[index] = element;
+        }
+        return element;
     }
 
     public void add(int index, Object element) {
 
+        if (realSize == array.length) {
+            Object[] rezArray = new Object[array.length * 3 / 2 + 1];
+            System.arraycopy(array, 0, rezArray, 0, array.length);
+            array = rezArray;
+        }
+        if (index > -1 && index <= realSize) {
+            realSize++;
+            System.arraycopy(array, index, array, index + 1, realSize-index-1);
+            array[index]=element;
+        } else {
+            checkIndex(index);
+        }
+
     }
 
     public Object remove(int index) {
-        return null;
+        checkIndex(index);
+        Object resElement = array[index];
+        if (isCorrectIndex(index)) {
+            System.arraycopy(array, index + 1, array, index, array.length - 1 - index);
+        }
+        realSize--;
+        return resElement;
+    }
+
+
+    private void checkIndex(int index) {
+        if (!isCorrectIndex(index)) {
+            throw new ArrayIndexOutOfBoundsException("Некорректный индекс");
+        }
+    }
+
+    private boolean isCorrectIndex(int index) {
+        if (index > -1 && index <= realSize) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public int indexOf(Object o) {
