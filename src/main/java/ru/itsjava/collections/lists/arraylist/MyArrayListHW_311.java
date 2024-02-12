@@ -63,8 +63,9 @@ public class MyArrayListHW_311 {
         for (int i = 0; i < array.length; i++) {
             if (array[i] != null && array[i].equals( o )) {
                 delIndex = i;
+                break;
             }
-            break;
+
         }
         if (delIndex == -1) {
             return false;
@@ -150,14 +151,15 @@ public class MyArrayListHW_311 {
     }
 
     public int lastIndexOf(Object o) {
-        int count = 0;
+        int count = -1;
+        int countObject = 0;
         for (int i = 0; i < realSize; i++) {
             count++;
             if (array[i].equals( o )) {
-                count--;
+                countObject = count;
             }
         }
-        return count;
+        return countObject;
     }
 
     @Override
