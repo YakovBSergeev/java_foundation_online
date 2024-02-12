@@ -27,8 +27,8 @@ public class MyArrayListPracticeHW_311 {
         listHW311.isEmpty();
         System.out.println("Метод boolean contains");
 //        listHW311.contains(listHW311.get(1));
-        listHW311.contains("Я здесь.");
-        listHW311.contains(" ");
+        System.out.println("listHW311.contains(\"Я здесь.\") = " + listHW311.contains("Я здесь."));
+        System.out.println("listHW311.contains(\"rnj\") = " + listHW311.contains("rnj"));
         System.out.println("Метод void clear");
         listHW311.clear();
         System.out.println(listHW311);

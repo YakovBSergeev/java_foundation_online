@@ -21,9 +21,9 @@ public class MyArrayListPracticeHW_312 {
 //        System.out.println("Метод boolean remove(Object o)");
 //        listHW311.remove("Где ты?");
 //        System.out.println(listHW311);
-//        System.out.println("Метод Object remove(int index)");
-//        listHW311.remove(1);
-//        System.out.println(listHW311);
+        System.out.println("Метод Object remove(int index)");
+        listHW311.remove(1);
+        System.out.println(listHW311);
         System.out.println("Метод Object get(int index)");
         System.out.println("listHW311.get(1) " + listHW311.get(1));
         System.out.println(" ");
