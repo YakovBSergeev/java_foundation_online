@@ -36,6 +36,7 @@ class MyArrayListHW_311Test {
     @Test
     void shouldCorrectlyAddFromObject() {
         assertTrue( array.add( 25 ) );
+        assertEquals( true, array.contains( 25 ) );
 
     }
 
@@ -46,6 +47,7 @@ class MyArrayListHW_311Test {
         array.add( "лиса" );
         assertTrue( array.remove( "волк" ) );
         assertFalse( array.remove( "122" ) );
+        assertEquals( false, array.contains( "волк" ) );
     }
 
     @Test
@@ -72,6 +74,7 @@ class MyArrayListHW_311Test {
         array.add( 9 );
         array.add( 10 );
         assertEquals( 12, array.set( 2, 12 ) );
+        assertEquals( false, array.contains( 10 ) );
     }
 
     @Test
@@ -105,6 +108,7 @@ class MyArrayListHW_311Test {
         array.add( 1,"не_важно" );
         assertEquals( "правильно", array.get( 5 ) );
         assertEquals( "два", array.get( 3 ) );
+        assertEquals( true,array.contains( "правильно" ) );
 
 
     }
@@ -116,6 +120,8 @@ class MyArrayListHW_311Test {
         array.add( 3 );
         array.add( 4 );
         assertEquals( 3, array.remove( 2 ) );
+        array.remove( 0 );
+        assertEquals( false, array.contains( 1 ) );
 
 
     }
