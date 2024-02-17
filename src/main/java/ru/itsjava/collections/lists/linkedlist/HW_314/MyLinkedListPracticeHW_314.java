@@ -1,6 +1,6 @@
-package ru.itsjava.collections.lists.linkedlist;
+package ru.itsjava.collections.lists.linkedlist.HW_314;
 
-import java.util.List;
+import ru.itsjava.collections.lists.linkedlist.HW_314.MyLinkedListHW_314;
 
 public class MyLinkedListPracticeHW_314 {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package ru.itsjava.collections.lists.linkedlist;
-
-import java.util.List;
+package ru.itsjava.collections.lists.linkedlist.HW_314;
 
 public class MyLinkedListHW_314 {
     private NodeHW_314 head;
