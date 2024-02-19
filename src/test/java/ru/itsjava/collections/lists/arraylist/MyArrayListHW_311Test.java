@@ -40,14 +40,14 @@ class MyArrayListHW_311Test {
     }
 
     @Test
-    void shouldCorrectlyRemoveFromObject() {
-        array.add( "заяц" );
-        array.add( "волк" );
-        array.add( "лиса" );
-        assertTrue( array.remove( "волк" ) );
-        assertFalse( array.remove( "122" ) );
-        assertEquals( false, array.contains( "волк" ) );
-    }
+        void shouldCorrectlyRemoveFromObject() {
+            array.add( "заяц" );
+            array.add( "волк" );
+            array.add( "лиса" );
+            assertTrue( array.remove( "волк" ) );
+            assertFalse( array.remove( "122" ) );
+            assertEquals( false, array.contains( "волк" ) );
+        }
 
     @Test
     void shouldCorrectlyClear() {

@@ -4,6 +4,9 @@ public class MyLinkedListHW_314 {
     private NodeHW_314 head;
 
     public int size() {
+        if (head==null) {
+            return 0;
+        }
         int count = 1;
         NodeHW_314 curNode = head;
         while (curNode.getNext() != null) {
@@ -21,12 +24,15 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean contains(Object o) {
+        if (head==null) {
+            return false;
+        }
         NodeHW_314 curNode = head;
-        while (curNode.getNext() != null) {
-            curNode = curNode.getNext();
+        for (int i = 0; i < size(); i++) {
             if (o == curNode.getValue()) {
                 return true;
             }
+            curNode = curNode.getNext();
         }
         return false;
     }
@@ -46,23 +52,47 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean remove(Object o) {
+        if (head == null) {
+            return false;
+        }
+        if (head.getValue().equals(o)) {
+            head = head.getNext();
+            return true;
+        }
+        if (head.getNext() == null) {
+            return false;
+        }
+        NodeHW_314 curNode = head;
+        NodeHW_314 prevNode = head;
+        while ((curNode = curNode.getNext()) != null) {
+            if (curNode.getValue().equals(o)) {
+                break;
+            }
+            prevNode = prevNode.getNext();
+        }
+        if (curNode == null) {
+            return false;
+        }
 
+        prevNode.setNext(curNode.getNext());
+        curNode.setNext(null);
+        return true;
 
-        return false;
     }
 
     public void clear() {
-        head = null;
 
+        head = null;
     }
 
     public Object get(int index) {
         checkIndex(index);
         NodeHW_314 resNode = head;
         for (int i = 0; i < size(); i++) {
-            if (index==i) {
+            if (index == i) {
                 return resNode.getValue();
-            }resNode=resNode.getNext();
+            }
+            resNode = resNode.getNext();
         }
         return null;
     }
@@ -71,10 +101,11 @@ public class MyLinkedListHW_314 {
         checkIndex(index);
         NodeHW_314 resNode = head;
         for (int i = 0; i < size(); i++) {
-            if (index==i) {
+            if (index == i) {
                 resNode.setValue(element);
                 return resNode.getValue();
-            }resNode=resNode.getNext();
+            }
+            resNode = resNode.getNext();
         }
 
         return null;
@@ -117,11 +148,29 @@ public class MyLinkedListHW_314 {
     }
 
     public int indexOf(Object o) {
-        return 0;
+        NodeHW_314 resNode = head;
+        for (int i = 0; i < size(); i++) {
+            if (resNode.getValue().equals(o)) {
+                return i;
+            }
+            resNode = resNode.getNext();
+        }
+        return -1;
     }
 
     public int lastIndexOf(Object o) {
-        return 0;
+        NodeHW_314 resNode = head;
+        int count = 0;
+        for (int i = 0; i < size(); i++) {
+            if (resNode.getValue().equals(o)) {
+                count = i;
+            }
+            resNode = resNode.getNext();
+        }
+        if (resNode == null && count == 0) {
+            return -1;
+        }
+        return count;
     }
 
     @Override
