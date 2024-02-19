@@ -46,18 +46,37 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean remove(Object o) {
+
+
         return false;
     }
 
     public void clear() {
+        head = null;
 
     }
 
     public Object get(int index) {
+        checkIndex(index);
+        NodeHW_314 resNode = head;
+        for (int i = 0; i < size(); i++) {
+            if (index==i) {
+                return resNode.getValue();
+            }resNode=resNode.getNext();
+        }
         return null;
     }
 
     public Object set(int index, Object element) {
+        checkIndex(index);
+        NodeHW_314 resNode = head;
+        for (int i = 0; i < size(); i++) {
+            if (index==i) {
+                resNode.setValue(element);
+                return resNode.getValue();
+            }resNode=resNode.getNext();
+        }
+
         return null;
     }
 
@@ -66,7 +85,35 @@ public class MyLinkedListHW_314 {
     }
 
     public Object remove(int index) {
-        return null;
+        checkIndex(index);
+        if (index == 0) {
+            Object resValue = head.getValue();
+            if (head.getNext() == null) {
+                head = null;
+            } else {
+                head = head.getNext();
+            }
+            return resValue;
+        }
+        NodeHW_314 curNode = head;
+        NodeHW_314 prevNode = head;
+        int count = 0;
+        while ((curNode = curNode.getNext()) != null) {
+            count++;
+            if (count == index) {
+                break;
+            }
+            prevNode = prevNode.getNext();
+        }
+        Object resValue = curNode.getValue();
+        if (curNode.getNext() == null) {
+            prevNode.setNext(null);
+        } else {
+            prevNode.setNext(curNode.getNext());
+            curNode.setNext(null);
+        }
+        return resValue;
+
     }
 
     public int indexOf(Object o) {
@@ -79,8 +126,20 @@ public class MyLinkedListHW_314 {
 
     @Override
     public String toString() {
-        return "MyLinkedListHW_314{" +
-                "head=" + head +
-                '}';
+        return "MyLinkedListHW_314{" + "head=" + head + '}';
+    }
+
+    private void checkIndex(int index) {
+        if (!isCorrectIndex(index)) {
+            throw new ArrayIndexOutOfBoundsException("Некорректный индекс");
+        }
+    }
+
+    private boolean isCorrectIndex(int index) {
+        if (index > -1 && index < size()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

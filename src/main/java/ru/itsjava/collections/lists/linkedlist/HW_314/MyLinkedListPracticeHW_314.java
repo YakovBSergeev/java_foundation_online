@@ -15,6 +15,8 @@ public class MyLinkedListPracticeHW_314 {
         System.out.println("listHW_314.size() = " + listHW_314.size());
         System.out.println("listHW_314.isEmpty() = " + listHW_314.isEmpty());
         System.out.println("listHW_314.contains(\"Строка_2\") = " + listHW_314.contains("Строка_2"));
+
+
     }
 
 }
