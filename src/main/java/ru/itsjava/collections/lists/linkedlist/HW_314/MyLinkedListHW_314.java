@@ -52,30 +52,30 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean remove(Object o) {
-        if (head == null) {
+        if (head == null) { //проверка на сущуствование списка.
             return false;
         }
-        if (head.getValue().equals(o)) {
-            head = head.getNext();
+        if (head.getValue().equals(o)) { //проверка соответствия первого элемента списка на запрос на удаление.
+            head = head.getNext(); // головным элементом делаем вторым в списке.
             return true;
         }
-        if (head.getNext() == null) {
+        if (head.getNext() == null) { //если первы элемент списка не соответствует запросу на удаление и  второй элемент null возвращаем ложь.
             return false;
         }
-        NodeHW_314 curNode = head;
+        NodeHW_314 curNode = head; //создаем две переменные, используемы для перенаправления и удаления ссылок элементов в списке.
         NodeHW_314 prevNode = head;
-        while ((curNode = curNode.getNext()) != null) {
-            if (curNode.getValue().equals(o)) {
+        while ((curNode = curNode.getNext()) != null) {//пробегаемся по списку до null ссылки.
+            if (curNode.getValue().equals(o)) {//проверка на искомый элемент.
                 break;
             }
-            prevNode = prevNode.getNext();
+            prevNode = prevNode.getNext();//переходим по ссылке к следующему элементу.
         }
-        if (curNode == null) {
+        if (curNode == null) {//возвращаем ложь, если искомого элемента нет в списке.
             return false;
         }
 
-        prevNode.setNext(curNode.getNext());
-        curNode.setNext(null);
+        prevNode.setNext(curNode.getNext());//перенаправляем ссылку через удаляемый элемент.
+        curNode.setNext(null);//с удаляемого элемента убираем ссылку на следующий элемент.
         return true;
 
     }
