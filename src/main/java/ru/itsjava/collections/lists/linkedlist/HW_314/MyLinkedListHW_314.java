@@ -4,7 +4,7 @@ public class MyLinkedListHW_314 {
     private NodeHW_314 head;
 
     public int size() {
-        if (head==null) {
+        if (head == null) {
             return 0;
         }
         int count = 1;
@@ -24,7 +24,7 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean contains(Object o) {
-        if (head==null) {
+        if (head == null) {
             return false;
         }
         NodeHW_314 curNode = head;
@@ -38,7 +38,7 @@ public class MyLinkedListHW_314 {
     }
 
     public boolean add(Object o) {
-        NodeHW_314 resNode = new NodeHW_314(o, null);
+        NodeHW_314 resNode = new NodeHW_314( o, null );
         if (head == null) {
             head = resNode;
         } else {
@@ -46,7 +46,7 @@ public class MyLinkedListHW_314 {
             while (curNode.getNext() != null) {
                 curNode = curNode.getNext();
             }
-            curNode.setNext(resNode);
+            curNode.setNext( resNode );
         }
         return true;
     }
@@ -55,7 +55,7 @@ public class MyLinkedListHW_314 {
         if (head == null) { //проверка на сущуствование списка.
             return false;
         }
-        if (head.getValue().equals(o)) { //проверка соответствия первого элемента списка на запрос на удаление.
+        if (head.getValue().equals( o )) { //проверка соответствия первого элемента списка на запрос на удаление.
             head = head.getNext(); // головным элементом делаем вторым в списке.
             return true;
         }
@@ -65,7 +65,7 @@ public class MyLinkedListHW_314 {
         NodeHW_314 curNode = head; //создаем две переменные, используемы для перенаправления и удаления ссылок элементов в списке.
         NodeHW_314 prevNode = head;
         while ((curNode = curNode.getNext()) != null) {//пробегаемся по списку до null ссылки.
-            if (curNode.getValue().equals(o)) {//проверка на искомый элемент.
+            if (curNode.getValue().equals( o )) {//проверка на искомый элемент.
                 break;
             }
             prevNode = prevNode.getNext();//переходим по ссылке к следующему элементу.
@@ -74,19 +74,23 @@ public class MyLinkedListHW_314 {
             return false;
         }
 
-        prevNode.setNext(curNode.getNext());//перенаправляем ссылку через удаляемый элемент.
-        curNode.setNext(null);//с удаляемого элемента убираем ссылку на следующий элемент.
+        prevNode.setNext( curNode.getNext() );//перенаправляем ссылку через удаляемый элемент.
+        curNode.setNext( null );//с удаляемого элемента убираем ссылку на следующий элемент.
         return true;
 
     }
 
     public void clear() {
-
+        NodeHW_314 delNode = head;
+        while (delNode != null) {
+            delNode.setNext( null );
+            delNode = delNode.getNext();
+        }
         head = null;
     }
 
     public Object get(int index) {
-        checkIndex(index);
+        checkIndex( index );
         NodeHW_314 resNode = head;
         for (int i = 0; i < size(); i++) {
             if (index == i) {
@@ -98,11 +102,11 @@ public class MyLinkedListHW_314 {
     }
 
     public Object set(int index, Object element) {
-        checkIndex(index);
+        checkIndex( index );
         NodeHW_314 resNode = head;
         for (int i = 0; i < size(); i++) {
             if (index == i) {
-                resNode.setValue(element);
+                resNode.setValue( element );
                 return resNode.getValue();
             }
             resNode = resNode.getNext();
@@ -116,7 +120,7 @@ public class MyLinkedListHW_314 {
     }
 
     public Object remove(int index) {
-        checkIndex(index);
+        checkIndex( index );
         if (index == 0) {
             Object resValue = head.getValue();
             if (head.getNext() == null) {
@@ -138,10 +142,10 @@ public class MyLinkedListHW_314 {
         }
         Object resValue = curNode.getValue();
         if (curNode.getNext() == null) {
-            prevNode.setNext(null);
+            prevNode.setNext( null );
         } else {
-            prevNode.setNext(curNode.getNext());
-            curNode.setNext(null);
+            prevNode.setNext( curNode.getNext() );
+            curNode.setNext( null );
         }
         return resValue;
 
@@ -149,8 +153,11 @@ public class MyLinkedListHW_314 {
 
     public int indexOf(Object o) {
         NodeHW_314 resNode = head;
+        if (head == null) {
+            return -1;
+        }
         for (int i = 0; i < size(); i++) {
-            if (resNode.getValue().equals(o)) {
+            if (resNode.getValue().equals( o )) {
                 return i;
             }
             resNode = resNode.getNext();
@@ -160,14 +167,17 @@ public class MyLinkedListHW_314 {
 
     public int lastIndexOf(Object o) {
         NodeHW_314 resNode = head;
-        int count = 0;
+        if (head == null) {
+            return -1;
+        }
+        int count = -1;
         for (int i = 0; i < size(); i++) {
-            if (resNode.getValue().equals(o)) {
+            if (resNode.getValue().equals( o )) {
                 count = i;
             }
             resNode = resNode.getNext();
         }
-        if (resNode == null && count == 0) {
+        if (resNode == null && count == -1) {
             return -1;
         }
         return count;
@@ -179,8 +189,8 @@ public class MyLinkedListHW_314 {
     }
 
     private void checkIndex(int index) {
-        if (!isCorrectIndex(index)) {
-            throw new ArrayIndexOutOfBoundsException("Некорректный индекс");
+        if (!isCorrectIndex( index )) {
+            throw new ArrayIndexOutOfBoundsException( "Некорректный индекс" );
         }
     }
 
