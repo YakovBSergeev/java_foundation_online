@@ -1,7 +1,4 @@
-package ru.itsjava.itsjava_01.Shop;
-
-import ru.itsjava.collections.maps.HW_324.Fruit;
-import ru.itsjava.collections.maps.HW_324.Man;
+package ru.itsjava.collections.maps.HW_324;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,13 +46,6 @@ public class MapPracticeHW_324 {
         for (Map.Entry<Man, Fruit> key : basket.entrySet()
         ) {
             System.out.println( key.getKey() + ": " + key.getValue() );
-        }
-        basket.put( georg, apple2 );
-        for (Map.Entry<Man, Fruit> pair : basket.entrySet()
-        ) {
-            if (pair.getKey().getName()>) {
-            }
-
         }
 
 
