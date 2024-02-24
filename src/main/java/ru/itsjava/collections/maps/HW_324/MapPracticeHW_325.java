@@ -3,7 +3,7 @@ package ru.itsjava.collections.maps.HW_324;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapPracticeHW_325 {
+public class    MapPracticeHW_325 {
     public static void main(String[] args) {
 
         Map<Man, Fruit> basket = new HashMap<>();
