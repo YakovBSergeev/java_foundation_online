@@ -82,10 +82,13 @@ public class MyLinkedListHW_314 {
 
     public void clear() {
         NodeHW_314 delNode = head;
-        while (delNode != null) {
+        NodeHW_314 nextNode = head;
+        while (nextNode != null) {
+            nextNode = nextNode.getNext();
             delNode.setNext( null );
-            delNode = delNode.getNext();
+            delNode = nextNode;
         }
+        System.out.println( "nextNode = " + nextNode );
         head = null;
     }
 
