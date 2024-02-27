@@ -18,7 +18,7 @@ public class SerializationUser {
                 new FileInputStream( "src/main/resources/user.out" ) )) {
             Object obj = inputStream.readObject();
             User userDeserialization = (User) obj;
-            System.out.println( "obj = " + obj );
+            System.out.println( "obj = " + userDeserialization );
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
