@@ -1,0 +1,647 @@
+<Bids>
+  <Vsvgo>
+    <Rge code="10513" name="Омская ТЭЦ-3 (ТГ-10)">
+      <date>01.03.2024</date>
+      <data>
+        <hour number="0">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="1">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="2">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="3">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="4">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="5">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="6">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="7">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="8">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="9">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="10">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="11">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="12">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="13">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="14">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="15">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="16">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="17">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="18">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="19">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="20">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="21">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="22">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+        <hour number="23">
+          <ats_group>10802</ats_group>
+          <ego_in_group>1000077</ego_in_group>
+          <p_0>120</p_0>
+          <c_0>20000</c_0>
+          <p_1></p_1>
+          <c_1></c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <c_on>80000</c_on>
+        </hour>
+      </data>
+    </Rge>
+  </Vsvgo>
+  <RsvBr>
+    <Gtp code="GOMSKE11" name="Омская ТЭЦ-3 ТГ-10">
+      <date>01.03.2024</date>
+      <data>
+        <hour number="0">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="1">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="2">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="3">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="4">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="5">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="6">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="7">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>82</OCPS>
+        </hour>
+        <hour number="8">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="9">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="10">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="11">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="12">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="13">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="14">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="15">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="16">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="17">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="18">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="19">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="20">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="21">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="22">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+        <hour number="23">
+          <p_0>79</p_0>
+          <c_0>0</c_0>
+          <p_1>120</p_1>
+          <c_1>1654</c_1>
+          <p_2></p_2>
+          <c_2></c_2>
+          <allow_pmax_modification>true</allow_pmax_modification>
+          <OCPU></OCPU>
+          <OCPS>102</OCPS>
+        </hour>
+      </data>
+    </Gtp>
+  </RsvBr>
+  <PriceRequests>
+    <Gtp code="GOMSKE11" name="Омская ТЭЦ-3 ТГ-10">
+      <date>01.03.2024</date>
+      <data>
+        <hour number="0">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="1">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="2">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="3">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="4">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="5">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="6">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="7">
+          <Session_1>82-</Session_1>
+          <Session_9></Session_9>
+        </hour>
+        <hour number="8">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="9">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="10">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="11">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="12">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="13">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="14">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="15">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="16">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="17">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="18">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="19">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="20">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="21">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="22">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+        <hour number="23">
+          <Session_1>82-</Session_1>
+          <Session_9>102-</Session_9>
+        </hour>
+      </data>
+    </Gtp>
+  </PriceRequests>
+</Bids>
