@@ -12,20 +12,18 @@ public class ThreadPractice {
 //        }
 
 
-//        ThreadPractice threadPractice = new ThreadPractice();
-//        MyThread thread1 = new MyThread(1, threadPractice);
-//        MyThread thread2 = new MyThread(2, threadPractice);
-//        MyThread thread3 = new MyThread(3, threadPractice);
-//
-//        thread1.start();
-//        thread2.start();
-//        thread3.start();
+        ThreadPractice threadPractice = new ThreadPractice();
+        MyThread thread1 = new MyThread(1, threadPractice);
+        MyThread thread2 = new MyThread(2, threadPractice);
+        MyThread thread3 = new MyThread(3, threadPractice);
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
 
 
-            Thread.currentThread().join();
-
+//            Thread.currentThread().join(2000);
     }
-
     @SneakyThrows
     public synchronized void printNum(int num) {
 //        synchronized (this) {
