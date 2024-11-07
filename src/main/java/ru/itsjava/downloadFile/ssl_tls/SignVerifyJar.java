@@ -1,4 +1,4 @@
-package ru.itsjava.downloadFile;
+package ru.itsjava.downloadFile.ssl_tls;
 
 import java.io.IOException;
 import java.io.InputStream;

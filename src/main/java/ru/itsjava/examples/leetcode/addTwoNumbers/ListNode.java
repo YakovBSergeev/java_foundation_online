@@ -1,8 +1,12 @@
-package ru.itsjava.examples.listNode;
+package ru.itsjava.examples.leetcode.addTwoNumbers;
 
-import java.util.LinkedList;
+import lombok.Data;
 
-public class ListNode{
+
+@Data
+
+public class ListNode {
+
     int val;
     ListNode next;
 

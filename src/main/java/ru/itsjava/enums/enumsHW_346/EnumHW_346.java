@@ -8,6 +8,7 @@ public class EnumHW_346 {
         System.out.println( day0.toString() );
         System.out.println( day1.getTranslate() );
         System.out.println( day1.name() );
+        System.out.println( "day1.ordinal() = " + day1.ordinal() );
 
     }
 }

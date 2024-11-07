@@ -1,8 +1,8 @@
-package ru.itsjava.examples.listNode;
+package ru.itsjava.examples.leetcode.addTwoNumbers;
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummyHead = new ListNode(0);
+        ListNode dummyHead = new ListNode( 0 );
         ListNode tail = dummyHead;
         int carry = 0;
 
@@ -14,7 +14,7 @@ class Solution {
             int digit = sum % 10;
             carry = sum / 10;
 
-            ListNode newNode = new ListNode(digit);
+            ListNode newNode = new ListNode( digit );
             tail.next = newNode;
             tail = tail.next;
 
@@ -25,5 +25,7 @@ class Solution {
         ListNode result = dummyHead.next;
         dummyHead.next = null;
         return result;
+
     }
+
 }

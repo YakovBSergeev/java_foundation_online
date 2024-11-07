@@ -22,6 +22,7 @@ public class MapPracticeHW_324 {
         basket.put(igor, apple4);
         basket.put(georg, apple3);
         basket.put(grigor, apple1);
+
         for (Map.Entry<Man, Fruit> key : basket.entrySet()
         ) {
             System.out.println(key.getKey() + ": " + key.getValue());

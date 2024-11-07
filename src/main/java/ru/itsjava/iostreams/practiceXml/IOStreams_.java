@@ -11,7 +11,9 @@ public class IOStreams_ {
 
     public static void main(String[] args) throws IOException {
 
-        File file = new File( "src/main/resources/Ценовые заявки (01.03.2024).xml" );
+        String path = "src/main/resources/Ценовые заявки (01.03.2024).xml";
+        File file = new File( path );
+
         List<String> file01 = new ArrayList<>();
         List<String> vsvgoP0 = new ArrayList<>();
         List<String> vsvgoC0 = new ArrayList<>();
@@ -46,6 +48,7 @@ public class IOStreams_ {
                 }
                 file01.add( input );
             }
+            System.out.println();
             System.out.println( "date: " + date );
             System.out.println();
 

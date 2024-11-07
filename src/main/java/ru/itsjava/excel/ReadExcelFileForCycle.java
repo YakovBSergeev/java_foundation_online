@@ -12,8 +12,9 @@ import java.util.Objects;
 import static org.apache.poi.ss.usermodel.CellType.FORMULA;
 
 
-public class ReadExcelFile {
+public class ReadExcelFileForCycle {
     public static void readExcelFile(String filePathName) {
+        long time = System.nanoTime();
         try {
             //Create the input stream from the xlsx/xls file
             FileInputStream file = new FileInputStream( filePathName );
@@ -37,13 +38,13 @@ public class ReadExcelFile {
                  Класс полезен при чтении значений ячеек, чтобы обеспечить согласованное форматирование и избежать несовпадений типов данных.
                  * */
                 DataFormatter formatter = new DataFormatter();
-
+                int g = workbook.getNumberOfSheets();
                 for (int i = 0; i < workbook.getNumberOfSheets(); i++) {
                     /* Интерфейс, включающий методы для работы на листе excel.
                      * */
-                    Sheet sheet = workbook.getSheetAt( i );
+                    Sheet sheet = workbook.getSheetAt( i ); // Первый лист в книге для метода getSheetAt( i ) указываем под i=0 итд!!!
                     int numberOfRows = sheet.getLastRowNum(); //почему не считает нулевую строку?
-                    for (int j = 0; j < numberOfRows; j++) {
+                    for (int j = 0; j <= numberOfRows; j++) {
                         Row row = sheet.getRow( j );
                         if (row == null) {
                             j++;
@@ -53,9 +54,9 @@ public class ReadExcelFile {
                             short maxColIdx = row.getLastCellNum();
                             for (short k = minColIdx; k < maxColIdx; k++) {
                                 Cell cell = row.getCell( k );
-                                String form = formatter.formatCellValue( cell );
-                                String formFormula = formatter.formatCellValue( cell, evaluator );
                                 if (cell != null) {
+                                    String form = formatter.formatCellValue( cell );
+                                    String formFormula = formatter.formatCellValue( cell, evaluator );
 
                                     /* Этот блок печает тип ячейки
                                     * if (k == row.getLastCellNum() - 1) {
@@ -89,117 +90,6 @@ public class ReadExcelFile {
                                         }
                                     }
                                 }
-
-
-//                            switch (cell.getCellType()) {
-//                                case STRING -> {
-//
-//                                    str = cell.getStringCellValue();
-//                                    if (k != row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                        System.out.print( str + "\t" );
-//                                    } else if (k == row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                        System.out.println( str );
-//                                    } else if (k != row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                        System.out.print( "\t" );
-//                                    } else if (k == row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                        System.out.println();
-//                                    }
-//
-//                                    break;
-//                                }
-//
-//                                case FORMULA -> {
-//                                    if (!DateUtil.isCellDateFormatted( cell )) {
-//                                        str = cell.getStringCellValue();
-//                                        if (k != row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                            System.out.print( str + "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                            System.out.println( str );
-//                                        } else if (k != row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                            System.out.print( "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                            System.out.println();
-//                                        }
-//                                    } else {
-//                                        date = cell.getDateCellValue();
-//                                        if (k != row.getLastCellNum() - 1 && date != null) {
-//                                            System.out.print( date + "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num != null) {
-//                                            System.out.println( date );
-//                                        } else if (k != row.getLastCellNum() - 1 && num == null) {
-//                                            System.out.print( "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num == null) {
-//                                            System.out.println();
-//                                        }
-//                                    }
-//
-//                                    break;
-//                                }
-//
-//                                case NUMERIC -> {
-//                                    if (!DateUtil.isCellDateFormatted( cell )) {
-//                                        num = cell.getNumericCellValue();
-//                                        if (k != row.getLastCellNum() - 1 && num != 0) {
-//                                            System.out.print( num + "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num != 0) {
-//                                            System.out.println( num );
-//                                        } else if (k != row.getLastCellNum() - 1 && num == 0) {
-//                                            System.out.print( "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num == 0) {
-//                                            System.out.println();
-//                                        }
-//                                    } else {
-//                                        date = cell.getDateCellValue();
-//                                        if (k != row.getLastCellNum() - 1 && date != null) {
-//                                            System.out.print( date + "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num != null) {
-//                                            System.out.println( date );
-//                                        } else if (k != row.getLastCellNum() - 1 && num == null) {
-//                                            System.out.print( "\t" );
-//                                        } else if (k == row.getLastCellNum() - 1 && num == null) {
-//                                            System.out.println();
-//                                        }
-//                                    }
-//                                    break;
-//                                }
-//
-//
-//                            }
-//                            if (DateUtil.isCellDateFormatted( row.getCell( k ) )) {
-//                                date = row.getCell( k ).getDateCellValue();
-//                                if (k != row.getLastCellNum() - 1 && date != null) {
-//                                    System.out.print( date + "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && num != null) {
-//                                    System.out.println( date );
-//                                } else if (k != row.getLastCellNum() - 1 && num == null) {
-//                                    System.out.print( "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && num == null) {
-//                                    System.out.println();
-//                                }
-//                            } else if (row.getCell( k ).getCellType() == CellType.STRING) {
-//                                str = sheet.getRow( j ).getCell( k ).getStringCellValue();
-//                                if (k != row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                    System.out.print( str + "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && !Objects.equals( str, "" )) {
-//                                    System.out.println( str );
-//                                } else if (k != row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                    System.out.print( "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && Objects.equals( str, "" )) {
-//                                    System.out.println();
-//                                }
-//                            } else {
-//                                num = row.getCell( k ).getNumericCellValue();
-//                                if (k != row.getLastCellNum() - 1 && num != 0) {
-//                                    System.out.print( num + "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && num != 0) {
-//                                    System.out.println( num );
-//                                } else if (k != row.getLastCellNum() - 1 && num == 0) {
-//                                    System.out.print( "\t" );
-//                                } else if (k == row.getLastCellNum() - 1 && num == 0) {
-//                                    System.out.println();
-//                                }
-//                            }
-//                            }
                             }
                         }
                     }
@@ -209,13 +99,13 @@ public class ReadExcelFile {
                 IOException e) {
             throw new RuntimeException( e );
         }
-
+        System.out.println( (System.nanoTime() - time) / 1000000 );
     }
 
     public static void main(String[] args) {
 //        readExcelFile( "src/main/resources/20240301_TERGEKXI_GOMSKE11_sell_norem.xls" );
 //        readExcelFile( "src/main/resources/20241024_sib_ppp_consumer_type.xls" );
-//        readExcelFile( "D:/Сергеев Я.Б/отчеты АТС/Потребление ГТП ОЭК 2024.xlsx" );
+        readExcelFile( "D:/Сергеев Я.Б/отчеты АТС/Потребление ГТП ОЭК 2024.xlsx" );
 //        readExcelFile( "d:/Сергеев Я.Б/топливные/2012/Топливные составляющие_2012.xls" );
 //        readExcelFile( "p:/Trading/Направление планирования и трейдинга/soft/OtchetNew2ЦЗ+_t.xlsb" );
     }

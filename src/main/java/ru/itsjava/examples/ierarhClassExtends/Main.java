@@ -1,4 +1,4 @@
-package ru.itsjava.examples.ierarh;
+package ru.itsjava.examples.ierarhClassExtends;
 
 import java.util.ArrayList;
 
@@ -18,7 +18,7 @@ class SolidOfRevolution extends Shape {
     private double radius;
 
     public SolidOfRevolution(double volume, double radius) {
-        super(volume);
+        super( volume );
         this.radius = radius;
     }
 
@@ -29,7 +29,7 @@ class SolidOfRevolution extends Shape {
 
 class Ball extends SolidOfRevolution { // конкретный класс
     public Ball(double radius) {
-        super(Math.PI * Math.pow(radius, 3) * 4 / 3, radius);
+        super( Math.PI * Math.pow( radius, 3 ) * 4 / 3, radius );
     }
 }
 
@@ -37,17 +37,17 @@ class Cylinder extends SolidOfRevolution { // конкретный класс
     private double height;
 
     public Cylinder(double radius, double height) {
-        super(Math.PI * radius * radius * height, radius);
+        super( Math.PI * radius * radius * height, radius );
         this.height = height;
     }
 }
 
-class Pyramid extends Shape{
+class Pyramid extends Shape {
     private double height;
     private double s; // площадь основания
 
     public Pyramid(double height, double s) {
-        super(height * s * 4 / 3);
+        super( height * s * 4 / 3 );
         this.height = height;
         this.s = s;
     }
@@ -59,16 +59,18 @@ class Box extends Shape {
     private double available;
 
     public Box(double available) {
-        super(available);
+        super( available );
         this.available = available;
     }
 
     public boolean add(Shape shape) {
         if (available >= shape.getVolume()) {
-            shapes.add(shape);
+            shapes.add( shape );
             available -= shape.getVolume();
+            System.out.println( "Оставшийся объем в Box " + available );
             return true;
         } else {
+            System.out.println( available );
             return false;
         }
     }
@@ -76,15 +78,18 @@ class Box extends Shape {
 
 public class Main {
     public static void main(String[] args) {
-        Ball ball = new Ball(4.5);
-        Cylinder cylyinder = new Cylinder(2, 2);
-        Pyramid pyramid = new Pyramid(100, 100);
+        Ball ball = new Ball( 4.5 );
+        Cylinder cylyinder = new Cylinder( 2, 2 );
+        Pyramid pyramid = new Pyramid( 5, 25 );
 
-        Box box = new Box(1000);
+        Box box = new Box( 1000 );
 
-        System.out.println(box.add(ball)); // ok
-        System.out.println(box.add(cylyinder)); // ok
-        System.out.println(box.add(pyramid)); // failed
+
+        System.out.println( box.add( cylyinder ) ); // ok
+        System.out.println( box.add( pyramid ) ); // ok
+        System.out.println( box.add( ball ) ); // ok
+        System.out.println( box.add( ball ) ); // ok
+        System.out.println( box.add( pyramid ) ); // failed
     }
 }
 

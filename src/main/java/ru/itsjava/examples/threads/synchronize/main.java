@@ -1,10 +1,10 @@
 package ru.itsjava.examples.threads.synchronize;
 
-public class mail {
+public class main {
     public static void main(String[] strings) {
         Object lock = new Object();
-        new StepThread( lock ).start();
-        new StepThread( lock ).start();
+        new StepThread(lock).start();
+        new StepThread(lock).start();
     }
 }
 
@@ -20,7 +20,7 @@ class StepThread extends Thread {
     /**
      * Идея такая: выводим имя потока, потом поток засыпает,
      * перед этим уведомив другой поток, о том, что теперь его очередь.
-     * <p>
+     *
      * После вызова первым потоком lock.notify() второй поток
      * не просыпается сразу, а ждёт,
      * пока lock не будет освобождён. А когда это происходит, уже вызван
@@ -28,16 +28,14 @@ class StepThread extends Thread {
      */
     @Override
     public void run() {
-        for (int i = 0; i < 21; i++) {
-            {
-                synchronized (lock) {
-                    try {
-                        System.out.println( getName() );
-                        lock.notify();
-                        lock.wait();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+        while (true) {
+            synchronized (lock) {
+                try {
+                    System.out.println(getName());
+                    lock.notify();
+                    lock.wait();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
             }
         }

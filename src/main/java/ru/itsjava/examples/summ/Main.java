@@ -1,5 +1,7 @@
 package ru.itsjava.examples.summ;
 
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -19,9 +21,9 @@ public class Main {
 //        System.out.println( "умножение чисел: " + multiplyMathBig.toString() );
 
         FactorialMathBig factorialMathBig = new FactorialMathBig();
-        factorialMathBig.factorial();
+        factorialMathBig.factorial( );
         System.out.println( factorialMathBig.toString() );
-        System.out.println( factorialMathBig.getFactorial() );
+        System.out.println( factorialMathBig );
 
     }
 }

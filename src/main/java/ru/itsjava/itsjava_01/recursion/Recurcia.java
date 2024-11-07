@@ -1,4 +1,4 @@
-package ru.itsjava.recursion;
+package ru.itsjava.itsjava_01.recursion;
 
 public class Recurcia {
     public static void main(String[] args) {

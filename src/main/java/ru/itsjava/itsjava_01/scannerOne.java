@@ -1,4 +1,4 @@
-package ru.itsjava;
+package ru.itsjava.itsjava_01;
 
 import java.io.Console;
 import java.util.Scanner;

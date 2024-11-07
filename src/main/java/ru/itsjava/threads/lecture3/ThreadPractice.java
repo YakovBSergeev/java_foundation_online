@@ -18,7 +18,9 @@ public class ThreadPractice {
         MyThread thread3 = new MyThread(3, threadPractice);
 
         thread1.start();
+//        thread1.join();
         thread2.start();
+//        thread2.join();
         thread3.start();
 
 
